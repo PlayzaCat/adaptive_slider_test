@@ -149,7 +149,7 @@ body {
           background: #FFFFFF;
           border-color: #B8FFEC;
           display: flex;
-          font-size: 24px;
+      
           border-width: 2px 0px 2px 2px; /* сделала правую часть рамки прозрачной */
         }
 
@@ -197,6 +197,7 @@ body {
   flex-wrap: wrap;
   overflow: hidden;
   height: 180px;
+  max-width: 1120px;
 }
 
 
