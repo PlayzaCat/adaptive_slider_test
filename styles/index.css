@@ -1,0 +1,326 @@
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url('../font/TTLakes-Regular.woff') format('woff'),
+  url('../font/TTLakes-Regular.eot') format('eot'),
+  url('../font/TTlakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+  @font-face {
+    font-family:'TTLakes bold';
+    src: url('../font/TTLakes-Bold.ttf') format('truetype'),
+    url('../font/TTLakes-Bold.eot') format('eot'),
+    url('../font/TTLakes-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+   }
+  
+   @font-face {
+    font-family:'TTLakes light';
+    src: url('../font/TTLakes-Light.ttf') format('truetype'),
+    url('../font/TTLakes-Light.eot') format('eot'),
+    url('../font/TTLakes-Light.ttf') format('woff');
+    font-weight: normal;
+   font-style: light;
+   }
+  
+   @font-face {
+    font-family:'TTLakes demi';
+    src: url('../font/TTLakes-DemiBold.ttf') format('truetype'),
+    url('../font/TTLakes-DemiBold.eot') format('eot'),
+    url('../font/TTLakes-DemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,
+body {
+        position: relative;
+        height: 100%;
+        box-sizing: content-box;
+      }
+
+body {
+        font-family: 'TTLakes', 'TTLakes bold', 'TTLakes light', 'TTLakes demi', sans-serif;
+      width: 100%;
+      min-width: 320px;
+      overflow-x: hidden;
+   
+      line-height: 18px;
+      background-color: #F2F2F2;
+      color: #1B1C21;
+
+      margin: 0;
+       padding: 0;
+      }
+
+
+      .adaptive-header {
+        display: flex;
+        font-style: "TTLakes light";
+        font-size: 16px;
+        line-height: 24px;
+        color: #7E7E82;
+        background-color: #F8F8F8;
+    
+        width: 100%;
+        align-items: center;
+        padding: 16px;
+        border: 1px solid #D9FFF5;
+        border-width: 2px 0px 0px 0px;
+      }
+
+
+      .mySwiper {
+        
+        position: relative;
+        width: 100%;
+        
+      }
+
+
+      .swiper-wrapper {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 320px;
+
+
+      }
+
+      .swiper-slide-active {
+        flex-shrink: 1.0;     
+
+      }
+
+
+      .swiper-slide-next {        
+        flex-shrink: 1.0;
+
+      }
+
+
+      .swiper-slide {     
+        
+        text-align: center;
+        font-size: 18px;
+        flex-shrink: 1.0;           
+      }
+
+
+  
+
+      .logo-slide__company_name {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        width: 240px;
+        height: 72px;
+        align-items: center;
+        padding-inline: 16px;
+        margin-left: 16px;
+        margin-top: 16px;
+        border-radius: 6px;
+        border: 1px solid #EAEAEA;
+        background: #FFFFFF; 
+       }
+
+
+       .logo-slide__company_name:hover,
+       .logo-slide__company_name:focus {
+          border: 2px solid #B8FFEC;
+          background: #FFFFFF;
+          border-color: #B8FFEC;
+          display: flex;
+          font-size: 24px;
+          border-width: 2px 0px 2px 2px; /* сделала правую часть рамки прозрачной */
+        }
+
+
+
+        .logo-slide__company_name:active {
+       
+          background: #d5d5da;   
+        }
+
+
+
+
+      .swiper-pagination {
+        position: relative;
+        bottom: 0px;
+        margin-top: 30px;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #B5B6BC;
+        height: 12px;
+        width: 12px;
+        }
+
+
+  /* скрывающая фигулька */
+ #mainpage_fade {
+  display: flex;
+  position: fixed;
+  z-index: 15;
+  margin-top: 5px;
+  right: 0;
+  height: 81px;
+  width: 24px;
+  border-radius: 0px; 
+  background: linear-gradient(270deg, #F2F2F2 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  }
+
+
+
+.logo-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 180px;
+}
+
+
+/* Readmore */
+  .readmore {
+    display: flex;
+    margin-top: 24px;
+  }
+
+
+.readmore__open {
+  display: flex;
+  height: 24px;
+  width: 132px;
+  align-items: center;
+  margin: 10px;
+  padding: 0px;
+  border: 0;
+  background: transparent;
+  flex-direction: row;
+}
+
+.readmore__open img {
+  transform: rotate(0deg);  
+ }
+
+
+.readmore__close {
+display: none;
+height: 24px;
+width: 132px;
+align-items: center;
+margin: 10px;
+padding: 0px;
+border: 0;
+background: transparent;
+flex-direction: row;
+}
+
+.readmore__close img {
+ transform: rotate(180deg); 
+}
+
+
+/* Кнопка readmore */
+  .menu__container {
+    display: none; 
+  }
+  
+  .readmore__open .readmore__close {
+    display: flex;
+  }
+  
+  .readmore__open .readmore__open {
+    display: none;
+  }
+  
+  .readmore__open .menu__container {
+    display: block;
+  } 
+
+  .readmore_block {
+    display: flex;
+  }
+
+
+.readmore_icon {
+  display: flex;
+ height: 8px;
+ width: 8px;
+ padding: 5px;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.readmore p {
+font-family:'TTLakes demi';
+font-style: normal;
+font-size: 16px;
+line-height: 16px;
+text-align: left;
+white-space: nowrap; 
+}
+
+
+
+ /* Экран 1*/
+
+ @media (min-width: 320px) {
+ 
+ }
+
+/* Экран 2*/
+ @media (max-width: 768px) { }
+
+ .logo-block {
+  display: none;
+}
+
+.readmore {
+  display: none;
+}
+
+ @media (min-width: 768px) {
+
+ .mySwiper {
+  display: none;
+ }
+
+ .logo-block {
+  display: flex;
+}
+
+.readmore {
+  display: flex;
+}
+
+}
+
+
+
+/* Экран 3*/
+
+ @media (min-width: 1120px){
+
+}

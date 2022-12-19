@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Light.eot');
+    src: local('TT Lakes Light'), local('TTLakes-Light'),
+        url('TTlakes-Light.eot?#iefix')
+        url('TTLakes-Light.woff') format('woff'),
+        url('TTLakes-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('TTlakes-Bold.eot?#iefix')
+        url('TTLakes-Bold.woff') format('woff'),
+        url('TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-DemiBold.eot');
+    src: local('TT Lakes Light'), local('TTLakes-DemiBold'),
+        url('TTlakes-DemiBold.eot?#iefix')
+        url('TTLakes-DemiBold.woff') format('woff'),
+        url('TTLakes-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('TT Lakes Light'), local('TTLakes-Regular'),
+        url('TTlakes-Regular.eot?#iefix')
+        url('TTLakes-Regular.woff') format('woff'),
+        url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.image-slider__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
