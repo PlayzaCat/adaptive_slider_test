@@ -44,41 +44,37 @@
 
 
 
-
-
-
-
-
 html,
 body {
         position: relative;
         height: 100%;
+        width: 100%;
         box-sizing: content-box;
       }
 
 body {
         font-family: 'TTLakes', 'TTLakes bold', 'TTLakes light', 'TTLakes demi', sans-serif;
-      width: 100%;
-      min-width: 320px;
-      overflow-x: hidden;
+        width: 100%;
+        min-width: 320px;
+        overflow-x: hidden;
    
-      line-height: 18px;
-      background-color: #F2F2F2;
-      color: #1B1C21;
+       line-height: 18px;
+        background-color: #F2F2F2;
+       color: #1B1C21;
 
-      margin: 0;
+       margin: 0;
        padding: 0;
       }
 
 
+
       .adaptive-header {
-        display: flex;
+        position: relative;
         font-style: "TTLakes light";
         font-size: 16px;
         line-height: 24px;
         color: #7E7E82;
         background-color: #F8F8F8;
-    
         width: 100%;
         align-items: center;
         padding: 16px;
@@ -88,41 +84,48 @@ body {
 
 
       .mySwiper {
-        
-        position: relative;
-        width: 100%;
-        
+
+      position: relative;
       }
 
-
-      .swiper-wrapper {
+      .swiper {
         display: flex;
         position: relative;
-        flex-direction: row;
-        justify-content: flex-start;
-        width: 320px;
-
-
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
       }
+
+      .swiper-slide {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding-right: 24px;
+      }
+
 
       .swiper-slide-active {
-        flex-shrink: 1.0;     
-
-      }
-
-
-      .swiper-slide-next {        
-        flex-shrink: 1.0;
-
-      }
-
-
-      .swiper-slide {     
         
-        text-align: center;
-        font-size: 18px;
-        flex-shrink: 1.0;           
+
       }
+
+ 
+    /* скрывающая фигулька */
+  #mainpage_fade {
+    display: flex;
+    position: fixed;
+    z-index: 15;
+    margin-top: 5px;
+    right: 0;
+    height: 81px;
+    width: 24px;
+    border-radius: 0px; 
+    background: linear-gradient(270deg, #F2F2F2 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+   }
+
+
 
 
   
@@ -132,10 +135,11 @@ body {
         position: relative;
         justify-content: space-between;
         width: 240px;
+        min-width: 240px;
         height: 72px;
         align-items: center;
         padding-inline: 16px;
-        margin-left: 16px;
+       
         margin-top: 16px;
         border-radius: 6px;
         border: 1px solid #EAEAEA;
@@ -176,23 +180,12 @@ body {
         }
 
 
-  /* скрывающая фигулька */
- #mainpage_fade {
-  display: flex;
-  position: fixed;
-  z-index: 15;
-  margin-top: 5px;
-  right: 0;
-  height: 81px;
-  width: 24px;
-  border-radius: 0px; 
-  background: linear-gradient(270deg, #F2F2F2 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-  }
 
 
 
 .logo-block {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
