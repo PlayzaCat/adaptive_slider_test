@@ -281,7 +281,10 @@ white-space: nowrap;
  /* Экран 1*/
 
  @media (min-width: 320px) {
- 
+.mySwiper {
+  overflow: hidden;
+  width: 100%;
+}
  }
 
 /* Экран 2*/
